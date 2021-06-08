@@ -1,45 +1,50 @@
 {
-  "name": "react-ts-template",
-  "version": "1.0.0",
-  "description": "React with TypeScript Template",
-  "main": "index.tsx",
-  "scripts": {
-    "build": "webpack",
-    "start": "webpack serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/khanhvtn/react-ts-template.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/khanhvtn/react-ts-template/issues"
-  },
-  "homepage": "https://github.com/khanhvtn/react-ts-template#readme",
-  "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "@babel/preset-react": "^7.13.13",
-    "@babel/preset-typescript": "^7.13.0",
-    "@types/react": "^17.0.9",
-    "@types/react-dom": "^17.0.6",
-    "babel-loader": "^8.2.2",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.1",
-    "path": "^0.12.7",
-    "style-loader": "^2.0.0",
-    "ts-loader": "^9.2.3",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
-  },
-  "dependencies": {
-    "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "typescript": "^4.3.2"
-  }
+    "name": "react-ts-template",
+    "version": "1.0.0",
+    "description": "React with TypeScript Template",
+    "main": "index.tsx",
+    "scripts": {
+        "start": "webpack server --config webpack.dev.js",
+        "build": "webpack --config webpack.prod.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/khanhvtn/react-ts-template.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/khanhvtn/react-ts-template/issues"
+    },
+    "homepage": "https://github.com/khanhvtn/react-ts-template#readme",
+    "devDependencies": {
+        "@babel/core": "^7.14.3",
+        "@babel/preset-env": "^7.14.4",
+        "@babel/preset-react": "^7.13.13",
+        "@babel/preset-typescript": "^7.13.0",
+        "@types/jest": "^26.0.23",
+        "@types/node": "^15.12.2",
+        "@types/react": "^17.0.9",
+        "@types/react-dom": "^17.0.6",
+        "babel-loader": "^8.2.2",
+        "css-loader": "^5.2.6",
+        "css-minimizer-webpack-plugin": "^3.0.1",
+        "file-loader": "^6.2.0",
+        "html-loader": "^2.1.2",
+        "html-webpack-plugin": "^5.3.1",
+        "mini-css-extract-plugin": "^1.6.0",
+        "path": "^0.12.7",
+        "style-loader": "^2.0.0",
+        "ts-loader": "^9.2.3",
+        "webpack": "^5.38.1",
+        "webpack-cli": "^4.7.2",
+        "webpack-dev-server": "^3.11.2",
+        "webpack-merge": "^5.8.0"
+    },
+    "dependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "typescript": "^4.3.2"
+    }
 }
