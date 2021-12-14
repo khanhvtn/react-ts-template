@@ -1,10 +1,7 @@
-import React ,{FunctionComponent}from "react"
+import { FunctionComponent } from "react";
 
-type Props = {
-    message?: string
-}
-const App: FunctionComponent<Props> = ({message})=>{
-    return <h1>{message}</h1>
-}
+const App: FunctionComponent = () => {
+  return <h1>Hello World</h1>;
+};
 
 export default App;
