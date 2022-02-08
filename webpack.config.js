@@ -2,6 +2,8 @@ const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const packageJson = require("./package.json");
+const defaultServerDevPort = 3000;
 
 /* Default Config */
 let defaultConfig = {
@@ -57,8 +59,12 @@ let devConfig = {
   },
   devServer: {
     contentBase: path.join(__dirname, "src"),
-    port: 3000,
+    port: defaultServerDevPort,
     open: true,
+    proxy: {
+      "/api": packageJson.proxy ? packageJson.proxy : ``,
+      pathRewrite: { "^/api": "" },
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
